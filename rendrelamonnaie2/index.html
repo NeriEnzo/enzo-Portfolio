@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Rendre la monnaie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="icone.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type='module' src="index.js"></script>
+</head>
+<body>
+<div class="container-fluid d-flex flex-column p-0 h-100 " style="max-width: 400px; margin:auto">
+    <header>
+        <h1 class="text-center">Rendre la monnaie</h1>
+    </header>
+    <main>
+        <div class="formulaire">
+            <div class="d-flex justify-content-around">
+                <div class="m-1">
+                    <label for="mtARegler">À régler</label>
+                    <input type='text'
+                           id="mtARegler"
+                           required
+                           autofocus
+                           min=0.01
+                           class="form-control" style="width : 110px; text-align: right">
+                </div>
+                <div class="m-1">
+                    <label for="mtRegle">Réglé</label>
+                    <input type='text'
+                           id="mtRegle"
+                           required
+                           disabled
+                           class="form-control" style=" width : 110px; text-align: right">
+                </div>
+                <div class="m-1">
+                    <label for="mtARendre" style="text-align: center">À rendre</label>
+                    <input type='text'
+                           id="mtARendre"
+                           disabled
+                           class="form-control" style="width : 110px; text-align: right">
+                </div>
+            </div>
+
+            <div id="grid-container">
+                <div class="grid-item">
+                    <img id="e50" src="img/b50.png" alt="Billet de 50 €">
+                    <span class="repartition"></span>
+                    <img id="c50" src="img/50c.png" alt="Pièce de 50 cts">
+                    <span class="repartition"></span>
+                </div>
+                <div class="grid-item">
+                    <img id="e20" src="img/b20.png" alt="Billet de 20 €">
+                    <span class="repartition"></span>
+                    <img id="c20" src="img/20c.png" alt="Pièce de 20 cts">
+                    <span class="repartition"></span>
+                </div>
+                <div class="grid-item">
+                    <img id="e10" src="img/b10.png" alt="Billet de 10 €">
+                    <span class="repartition"></span>
+                    <img id="c10" src="img/10c.png" alt="Pièce de 10 cts">
+                    <span class="repartition"></span>
+                </div>
+                <div class="grid-item">
+                    <img id="e5" src="img/b5.png" alt="Billet de 5 €">
+                    <span class="repartition"></span>
+                    <img id="c5" src="img/5c.png" alt="Pièce de 5 cts">
+                    <span class="repartition"></span>
+                </div>
+                <div class="grid-item">
+                    <img id="e2" src="img/2.png" alt="Pièce de 2 €">
+                    <span class="repartition"></span>
+                    <img id="c2" src="img/2c.png" alt="Pièce de 2 cts">
+                    <span class="repartition"></span>
+                </div>
+                <div class="grid-item">
+                    <img id="e1" src="img/1.png" alt="Pièce de 1 €">
+                    <span class="repartition"></span>
+                    <img id="c1" src="img/1c.png" alt="Pièce de 2 cts">
+                    <span class="repartition"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</div>
+</body>
+</html>

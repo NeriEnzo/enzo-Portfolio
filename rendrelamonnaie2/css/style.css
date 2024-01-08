@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #0c56a1;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+header {
+    background-color: #00509F;
+    color: #FFF;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+
+footer {
+    background-color: #00509F;
+    color: #FFF;
+}
+
+.formulaire {
+    padding: 10px;
+    text-align: center;
+}
+
+.repartition {
+    display: grid;
+    place-items: center; /* centre le bloc sur la page*/
+    text-align: center; /* centre le contenu texte */
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr); /* 6 lignes égales */
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 150px 50px 100px 50px;
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* RETIRER LES FLÈCHES DES INPUTS NUMBER */
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Gestion des couleurs des inputs */
+
+input[type=number] {
+    background-color: #00509F;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+input:disabled {
+    background-color: #00509F !important;
+    color: #0F0;
+    border: 1px solid #00509F;
+    padding: 5px;
+    cursor: not-allowed;
+}
