@@ -18,7 +18,17 @@ header {
     text-align: center;
     padding: 20px;
 }
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 1s, height 1s, transform 1s;
+}
 
+.box:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
 h1 {
     font-size: 36px;
     margin: 0;
